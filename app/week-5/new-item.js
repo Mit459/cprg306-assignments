@@ -54,7 +54,7 @@ const NewItem = () => {
             </button>
 
             <span className="text-lg font-semibold">{quantity}</span>
-            <button onClick={increment} disabled={quantity == 20}
+            <button onClick={increment} 
               className="px-4 py-2  bg-amber-500 text-white rounded-full disabled:bg-slate-700 hover:bg-amber-600">
               +
             </button>
