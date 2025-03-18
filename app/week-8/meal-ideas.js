@@ -22,7 +22,8 @@ const MealIdeas = ({ ingredient }) => {
     mealContent = (
       <ul className="space-y-3">
         {meals.map(meal => (
-          <li key={meal.idMeal} className="bg-gray-900 p-4 rounded-lg hover:bg-orange-600 cursor-pointer">
+          <li key={meal.idMeal} className="bg-gray-900 p-4 rounded-lg hover:bg-orange-600 cursor-pointer flex items-center space-x-2">
+            <img src={meal.strMealThumb} alt={meal.strMeal} className='w-16 h-16 rounded-lg mb-2 '/>
             <h3>{meal.strMeal}</h3>
           </li>
         ))}
